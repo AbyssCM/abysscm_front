@@ -1,0 +1,46 @@
+.container {
+  background-color: #99c4e2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center;     /* 가로 중앙 정렬 */
+  text-align: center;
+  gap: 1.5rem;            /* 요소 간 간격 */
+  padding: 2rem;
+}
+
+/* 타이틀 */
+.title {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 50px;        /* 50픽셀 */
+  font-weight: 400;       /* Regular */
+  color: #000000;         /* 검정색 */
+  margin-bottom: 0.5rem;
+}
+
+/* 서브타이틀 */
+.subtitle {
+  font-family: 'Jua', sans-serif;
+  font-size: 18px;        /* 18픽셀 */
+  color: #ffffff;         /* 흰색 */
+  line-height: 1.5;
+}
+
+/* 메인 이미지 */
+.mainImage {
+  width: 290px;
+  height: 290px;          /* 고정 크기 */
+  border-radius: 12px;
+  margin: 1rem 0;
+  object-fit: cover;      /* 이미지 비율 유지 */
+}
+
+/* 로그인 버튼 이미지 */
+.loginButton {
+  width: 300px;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;      /* 이미지 비율 유지 */
+}

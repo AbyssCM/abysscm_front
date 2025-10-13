@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.container {
+  background-color: #99c4e2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 텍스트 왼쪽 정렬 */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.infoGroup {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.label {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.info {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 0.3rem;
+}
+
+.logoutButton {
+  align-self: flex-end; /* 오른쪽 정렬 */
+  width: 120px;
+  height: 45px;
+  background-color: #6F6CFF;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

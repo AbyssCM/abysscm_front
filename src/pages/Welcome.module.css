@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.container {
+  background-color: #99c4e2;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  font-family: 'Poppins', sans-serif; /* 전체 텍스트 Poppins */
+  color: #ffffff;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 420px; /* 모바일/PC 최대 폭 */
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 내부 요소 왼쪽 정렬 */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.username {
+  color: #6F6CFF; /* xxx 부분 강조 색상 */
+}
+
+.startButton {
+  width: 120px;
+  height: 40px;
+  background-color: #6F6CFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end; /* 버튼 오른쪽 정렬 */
+}
