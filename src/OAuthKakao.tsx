@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const BACKEND_API = "http://localhost:8000/login/kakao";
+const BACKEND_API = "http://api.abysscm.com:8000/login/kakao";
 
 const OAuthKakao: React.FC = () => {
   const navigate = useNavigate();

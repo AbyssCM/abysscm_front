@@ -9,7 +9,7 @@ declare global {
 }
 
 const KAKAO_JS_KEY = "5b13bf002507b6668e9aae915b7f35ad";
-const REDIRECT_URI = "http://localhost:5173/oauth/kakao";
+const REDIRECT_URI = "http://www.abysscm.com/oauth/kakao";
 
 
 const Home: React.FC = () => {

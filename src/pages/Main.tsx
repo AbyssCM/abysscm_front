@@ -19,7 +19,7 @@ const Main: React.FC<MainProps> = ({ kakaoId }) => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8001/users/${kakao_id}`);
+        const response = await axios.get(`http://api.abysscm.com:8001/users/${kakao_id}`);
         const userData: UserData = response.data;
 
         setUsername(userData.name);

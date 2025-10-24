@@ -37,7 +37,7 @@ const Saju: React.FC<SajuProps> = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/submit",
+        "http://api.abysscm.com:8000/submit",
         payload,
         {
           headers: {
