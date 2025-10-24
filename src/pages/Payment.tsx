@@ -14,7 +14,7 @@ const Payment: React.FC = () => {
   const [widget, setWidget] = useState<any | null>(null);
   const [toss, setToss] = useState<any | null>(null);
   const [ready, setReady] = useState(false);
-  const [amount, setAmount] = useState({ currency: "KRW", value: 49900 });
+  const [amount, _setAmount] = useState({ currency: "KRW", value: 49900 });
   const [showModal, setShowModal] = useState(false);
   const [result, setResult] = useState<null | "success" | "fail">(null);
   const location = useLocation();

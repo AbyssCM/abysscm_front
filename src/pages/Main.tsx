@@ -7,7 +7,9 @@ interface UserData {
   matching_count: number;
   consultation_count: number;
 }
-
+interface MainProps {
+  kakaoId?: string;
+}
 const Main: React.FC<MainProps> = ({ kakaoId }) => {
   const [username, setUsername] = useState("XXX");
   const [matchingCount, setMatchingCount] = useState(0);
