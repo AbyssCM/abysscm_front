@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .container {
-  background-color: #99c4e2;
+  background-color: #FFFCF7;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -31,21 +31,21 @@
 .welcomeText {
   font-size: 30px;
   font-weight: bold;
-  color: #ffffff;
+  color: #C5BCB5;
 }
 
 .username {
-  color: #6F6CFF;
+  color: #70665F;
 }
 
 /* 통계 */
 .stats {
   font-size: 14px;
-  color: #ffffff;
+  color: #70665F;
 }
 
 .statNumber {
-  color: #6F6CFF;
+  color: #554843;
   font-weight: bold;
 }
 
@@ -59,12 +59,12 @@
 
 .cardText {
   font-size: 18px;
-  color: #ffffff;
+  color: #70665F;
 }
 
 .cardBox {
   width: 100%;
   height: 80px;
-  background-color: #ffffff;
+  background-color: #C5BCB5;
   border-radius: 8px;
 }

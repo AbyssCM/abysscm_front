@@ -98,6 +98,7 @@ const SignUp: React.FC = () => {
         Abyss <br />
         © 2025. AbyssCM. All rights reserved
       </div>
+      <img src="/sginup.png" alt="하단 이미지" className={styles.bottomImage} />
     </div>
   );
 };

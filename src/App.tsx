@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import Welcome from "./pages/Welcome";
 import Payment from "./pages/Payment";
+import PaymentSuccess from "./pages/PaymentSuccess";
+import PaymentFail from "./pages/PaymentFail";
 import Saju from "./pages/Saju";
 import Profile from "./pages/Profile";
 import Main from "./pages/Main";
@@ -17,6 +19,8 @@ const App: React.FC = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/payment" element={<Payment />} />
+  <Route path="/payment/success" element={<PaymentSuccess />} />
+  <Route path="/payment/fail" element={<PaymentFail />} />
         <Route path="/saju" element={<Saju />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/main" element={<Main />} />

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .container {
-  background-color: #99c4e2;
+  background-color: #FFFCF7;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,12 +21,12 @@
 .title {
   font-size: 30px;
   font-weight: bold;
-  color: #ffffff;
+  color: #C5BCB5;
   margin-bottom: 2rem;
 }
 
 .username {
-  color: #6F6CFF;
+  color: #70665F;
 }
 
 .inputGroup {
@@ -45,7 +45,7 @@
 
 .inputLabel {
   font-size: 14px;
-  color: #ffffff;
+  color: #70665F;
 }
 
 .textToggle {
@@ -55,12 +55,12 @@
 
 .toggleText {
   font-size: 14px;
-  color: #ffffff;
+  color: #C5BCB5;
   cursor: pointer;
 }
 
 .toggleText.activeText {
-  color: #6F6CFF;
+  color: #70665F;
   font-weight: bold;
 }
 
@@ -77,8 +77,8 @@
   border: none;
   font-size: 16px;
   margin-top: 0.3rem;
-  color: #000000;
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: #C5BCB5;
 }
 
 .inputField[readonly] {
@@ -86,15 +86,15 @@
 }
 
 .submitButton {
-  width: 100%;
+  width: 60%;
   max-width: 250px;
   height: 45px;
-  background-color: #6F6CFF;
+  background-color: #70665F;
   color: #ffffff;
   font-weight: bold;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 2rem;
-  align-self: flex-end; /* 버튼 오른쪽 정렬 */
+  align-self: center; /* 버튼 오른쪽 정렬 */
 }

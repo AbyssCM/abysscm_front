@@ -46,11 +46,11 @@ const Saju: React.FC<SajuProps> = () => {
         }
       );
       console.log("서버 응답:", res.data);
-      alert("제출 완료!");
+      alert("가입이 완료되었어요!");
       navigate("/main");
     } catch (err: any) {
       console.error("AxiosError:", err);
-      alert("제출 실패: " + err.response?.data?.detail || err.message);
+      alert("가입실패, 관리자에게 문의하세요: " + err.response?.data?.detail || err.message);
     }
   };
 
@@ -59,7 +59,7 @@ const Saju: React.FC<SajuProps> = () => {
       <Navbar />
       <div className={styles.contentWrapper}>
         <h1 className={styles.title}>
-          <span className={styles.username}>{username}</span>님<br /> 사주를 통해<br/>결혼운을 알아볼까요?
+          <span className={styles.username}>사주</span>를 통해 <br/><span className={styles.username}>결혼운</span>을 알아볼까요?
         </h1>
 
         {/* 이름 (수정 불가) */}

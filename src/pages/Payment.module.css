@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .container {
-  background-color: #99c4e2;
+  background-color: #FFFCF7;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -22,25 +22,25 @@
 .title {
   font-size: 30px;
   font-weight: bold;
-  color: #ffffff;
+  color: #C5BCB5;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
   font-size: 15px;
   font-weight: bold;
-  color: #ffffff;
+  color: #6D6259;
   margin-bottom: 1.5rem;
 }
 
 .username {
-  color: #6F6CFF;
+  color: #70665F;
 }
 
 .infoBox {
   width: 100%;
-  background-color: #ffffff;
-  color: #999999;
+  background-color: #70665F;
+  color: #ffffff;
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -51,14 +51,14 @@
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 0.5rem;
-  color: #333333;
+  color: #ffffff;
 }
 
 .productPrice {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 0.5rem;
-  color: #333333;
+  color: #ffffff;
 }
 
 .productFeatures {
@@ -74,19 +74,35 @@
 }
 
 .productFeatures li::before {
-  content: "✔️";
+  /* use the monochrome check glyph (U+2713) so CSS color applies
+     the emoji version (with variation selector) is colored by the OS
+     and cannot be recolored with `color`. */
+  content: "\2713";
   margin-right: 0.5rem;
-  color: #6F6CFF;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: inherit;
 }
 
 .paymentButton {
-  width: 100%;
+  width: 60%;
   height: 50px;
-  background-color: #6F6CFF;
+  background-color: #70665F;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  align-self: center;
+}
+
+/* Modal 버튼들을 가로로 정렬하고, 각 버튼이 동일한 너비를 가지도록 함 */
+.modalButtons {
+  display: flex;
+  gap: 8px;
+}
+.modalButtons .paymentButton {
+  flex: 1; /* 동일한 너비로 확장 */
+  width: auto; /* 부모 flex에 맞추기 위해 기본 100% 오버라이드 */
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .container {
-  background-color: #99c4e2;
+  background-color: #C5BCB5;
   min-height: 100vh;
   padding: 2rem;
   display: flex;
@@ -9,7 +9,7 @@
   justify-content: center; 
   align-items: center;    
   font-family: 'Poppins', sans-serif; /* 전체 텍스트 Poppins */
-  color: #ffffff;
+  color: #5D554F;
 }
 
 .contentWrapper {
@@ -25,14 +25,14 @@
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #5D554F;
 }
 
 .checkboxLabel {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #5D554F;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -62,7 +62,7 @@
 .signUpButton {
   width: 333px;
   height: 56px;
-  background-color: #6F6CFF;
+  background-color: #70665F;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -80,4 +80,17 @@
   font-size: 14px;
   color: #999999;
   font-family: 'Poppins', sans-serif;
+}
+
+/* 화면 맨 아래 고정 이미지 (Signup) */
+.bottomImage {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  pointer-events: none;
+  z-index: 1000;
 }
