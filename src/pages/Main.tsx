@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./Main.module.css";
 
+
+const ABYSSCM_API_KEY = import.meta.env.VITE_ABYSSCM_API_KEY;
+
 interface UserData {
   name: string;
   matching_count: number;
@@ -19,7 +22,7 @@ const Main: React.FC<MainProps> = ({ kakaoId }) => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://api.abysscm.com:8001/users/${kakao_id}`);
+        const response = await axios.get(`${ABYSSCM_API_KEY}/users/${kakao_id}`);
         const userData: UserData = response.data;
 
         setUsername(userData.name);

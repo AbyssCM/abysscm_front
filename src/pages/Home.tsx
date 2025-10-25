@@ -8,9 +8,9 @@ declare global {
   }
 }
 
-const KAKAO_JS_KEY = "5b13bf002507b6668e9aae915b7f35ad";
-const REDIRECT_URI = "http://www.abysscm.com/oauth/kakao";
-
+const KAKAO_JS_KEY = import.meta.env.VITE_KAKAO_JS_KEY;
+const REDIRECT_URI = import.meta.env.VITE_KAKAO_REDIRECT_URI;
+const REDIRECT_TEST_URI = import.meta.env.VITE_KAKAO_REDIRECT_TEST_URI;
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
     if (!window.Kakao) return;
 
     window.Kakao.Auth.authorize({
-      redirectUri: REDIRECT_URI,
+      redirectUri: REDIRECT_TEST_URI,
       scope: "profile_nickname", // 닉네임만 요청
     });
   };

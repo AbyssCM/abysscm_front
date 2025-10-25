@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const BACKEND_API = "http://api.abysscm.com:8000/login/kakao";
+
+const ABYSSCM_API_KEY = import.meta.env.VITE_ABYSSCM_API_KEY;
 
 const OAuthKakao: React.FC = () => {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ const OAuthKakao: React.FC = () => {
     console.log("Authorization code:", code);
 
     axios
-      .post(BACKEND_API, { code })
+      .post(`${ABYSSCM_API_KEY}/login/kakao`, { code })
       .then((res) => {
         console.log("백엔드 응답:", res.data);
         const { jwt, user } = res.data;

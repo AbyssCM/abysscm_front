@@ -4,6 +4,7 @@ import styles from "./Saju.module.css";
 import Navbar from "./Navbar";
 import axios from "axios";
 
+const ABYSSCM_API_KEY = import.meta.env.VITE_ABYSSCM_API_KEY;
 interface SajuProps {
   username?: string;
 }
@@ -18,6 +19,8 @@ const Saju: React.FC<SajuProps> = () => {
   const [gender, setgender] = useState("");  
   const [ampm, setAmpm] = useState<"AM" | "PM">("AM");
   const navigate = useNavigate(); // ← 추가
+
+
   const handleSubmit = async () => {
     const jwt = localStorage.getItem("jwtToken"); // 저장된 JWT 가져오기
     if (!jwt) {
@@ -37,7 +40,7 @@ const Saju: React.FC<SajuProps> = () => {
 
     try {
       const res = await axios.post(
-        "http://api.abysscm.com:8000/submit",
+        `${ABYSSCM_API_KEY}/submit`,
         payload,
         {
           headers: {

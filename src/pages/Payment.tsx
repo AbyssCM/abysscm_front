@@ -4,7 +4,8 @@ import styles from "./Payment.module.css";
 import Navbar from "./Navbar";
 import { loadTossPayments, ANONYMOUS } from "@tosspayments/tosspayments-sdk";
 
-const clientKey = "test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm";
+
+const TOSSPAY_CLIENT_KEY = import.meta.env.VITE_TOSSPAY_CLIENT_KEY;
 
 const Payment: React.FC = () => {
   const storedUser = localStorage.getItem("user");
@@ -23,7 +24,7 @@ const Payment: React.FC = () => {
     (async () => {
       try {
         console.info("초기화: Toss SDK 로드 시작");
-        const tossInstance = await loadTossPayments(clientKey);
+        const tossInstance = await loadTossPayments(TOSSPAY_CLIENT_KEY);
         console.info("초기화: Toss SDK 로드 완료", tossInstance);
         // 디버깅: toss 인스턴스의 메서드/프로퍼티를 자세히 출력
         try {
